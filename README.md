@@ -1,2 +1,3 @@
 # django-test-task-api
-Test task api in django.
+
+All users have for test purposes password 'admin'.
