@@ -56,13 +56,13 @@ class TagSerializer(DynamicFieldsMixin, serializers.HyperlinkedModelSerializer):
 
 class BlogListSerializer(serializers.HyperlinkedModelSerializer):
     # Method fields
-    category_username = serializers.SerializerMethodField('get_category_username')
+    category_name = serializers.SerializerMethodField('get_category_name')
     tags_names = serializers.SerializerMethodField('get_tags_name')
-    author_name = serializers.SerializerMethodField('get_author_name')
+    author_username = serializers.SerializerMethodField('get_author_username')
 
     class Meta:
         model = Blog
-        fields = ['url', 'title', 'slug', 'category_username', 'tags_names', 'author_name']
+        fields = ['url', 'title', 'slug', 'category_name', 'tags_names', 'author_username']
 
     # Methods
 
