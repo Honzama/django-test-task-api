@@ -1,0 +1,162 @@
+[
+  {
+    "model":"auth.user",
+    "pk":1,
+    "fields":{
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_superuser": true,
+      "is_staff": true,
+      "last_login": "2021-01-28 22:27:16.002669+01",
+      "groups": [],
+      "user_permissions": [],
+      "password": "pbkdf2_sha256$150000$U8HGaER0RXP9$moRd2vET98YcuK0rC/VHiZEu7F1lElTOlxqFDQWB8W0=",
+      "email": "admin@example.com",
+      "date_joined": "2021-01-28 22:26:32.958284+01"
+    }
+  },
+  {
+    "model":"auth.user",
+    "pk":2,
+    "fields":{
+      "username": "admin1",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_superuser": true,
+      "is_staff": true,
+      "last_login": "2021-01-28 22:27:16.002669+01",
+      "groups": [],
+      "user_permissions": [],
+      "password": "pbkdf2_sha256$150000$U8HGaER0RXP9$moRd2vET98YcuK0rC/VHiZEu7F1lElTOlxqFDQWB8W0=",
+      "email": "admin1@example.com",
+      "date_joined": "2021-01-28 22:26:32.958284+01"
+    }
+  },
+  {
+    "model":"api.user",
+    "pk":1,
+    "fields":{
+      "user": [
+          "admin"
+      ],
+      "address" : "Náměstí Míru, Praha",
+      "lat" : 50.0746775,
+      "lng" : 14.4367595,
+      "location" : "POINT (14.4367595 50.0746775)"
+    }
+  },
+  {
+    "model":"api.user",
+    "pk":2,
+    "fields":{
+      "user": [
+          "admin1"
+      ],
+      "address" : "I. P. Pavlova, Praha",
+      "lat" : 50.0754327,
+      "lng" : 14.4296907,
+      "location" : "POINT (14.4296907 50.0754327)"
+    }
+  },
+  {
+    "model":"api.category",
+    "pk": 1,
+    "fields": {
+      "name": "First test category",
+      "slug": "first-test-category"
+    }
+  },
+  {
+    "model":"api.category",
+    "pk": 2,
+    "fields": {
+      "name": "Second test category",
+      "slug": "second-test-category"
+    }
+  },
+  {
+    "model":"api.tag",
+    "pk": 1,
+    "fields": {
+      "name": "First test tag",
+      "slug": "first-test-tag"
+    }
+  },
+  {
+    "model":"api.tag",
+    "pk": 2,
+    "fields": {
+      "name": "Second test tag",
+      "slug": "second-test-tag"
+    }
+  },
+  {
+    "model":"api.comment",
+    "pk": 1,
+    "fields": {
+      "comment": "Admin comment",
+      "user": 1,
+      "blog": 1
+    }
+  },
+  {
+    "model":"api.comment",
+    "pk": 2,
+    "fields": {
+      "comment": "Admin1 comment",
+      "user": 2,
+      "blog": 1
+    }
+  },
+  {
+    "model":"api.comment",
+    "pk": 3,
+    "fields": {
+      "comment": "Admin comment",
+      "user": 1,
+      "blog": 2
+    }
+  },
+  {
+    "model":"api.blog",
+    "pk":1,
+    "fields":{
+      "title": "First test blog",
+      "content": "Test blog content.",
+      "creation_date": "2021-01-28 22:27:16.002669+01",
+      "slug": "first-test-blog",
+      "tags": [1,2],
+      "category": 1,
+      "author": 1
+    }
+  },
+  {
+    "model":"api.blog",
+    "pk":2,
+    "fields":{
+      "title": "Second test blog",
+      "content": "Test blog content.",
+      "creation_date": "2021-01-28 22:27:16.002669+01",
+      "slug": "second-test-blog",
+      "tags": [1],
+      "category": 2,
+      "author": 2
+    }
+  },
+  {
+    "model":"api.blog",
+    "pk":3,
+    "fields":{
+      "title": "Third test blog",
+      "content": "Test blog content.",
+      "creation_date": "2021-01-28 22:27:16.002669+01",
+      "slug": "third-test-blog",
+      "tags": [],
+      "category": null,
+      "author": 1
+    }
+  }
+]
