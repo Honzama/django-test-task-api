@@ -13,8 +13,8 @@ dependencies:
   - waitress
   - whitenoise
   - pip
+  - nginx
   - pip:
     - django-restql
     - django-waitress
-    - nginx
 prefix: C:\Users\Jan Macek\.conda\envs\test_task
